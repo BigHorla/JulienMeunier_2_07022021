@@ -4,58 +4,99 @@
 	<head>
 			<meta charet="UTF-8" />
 			<link rel="stylesheet" href="style.css" />
+            <link rel="icon" href="images/logo/Reservia.svg" />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 			<title>Reservia</title>
 	</head>
 	<body>
-		<header>[LOGO] Hebergements Activités s'inscrire</header>
+		<header>
+            <div><img src="images/logo/Reservia.svg" alt=""></div>
+            <div><a href="#SectionHebergements">Hébergements</a></div>
+            <div><a href="#SectionActivités">Activités</a></div>
+            <div>s'inscrire</div>
+        </header>
 
-        <section> <!-- Section dédiée à la recherche -->
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <section>[ZONE DE RECHERCHE]</section>
-            <section>Filtres [Economique | Familial | Romantique | Animaux autorisés]</section>
-            <p>[i] Plus de 500 logements sont disponible dans cette ville</p>
-        </section>
+        <main>
+            <section> <!-- Section dédiée à la recherche -->
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <div> <!-- Moteur de recherche -->
+                    <div>[LOGO] Marseille, France [Rechercher]</div>
+                    <div>
+                        <h4>Filtres</h4>
+                        <div id="filterBar">
+                            <div class="filterButton">
+                                <p>Economique</p> 
+                            </div>
+                            <div class="filterButton">
+                                <p>Familial</p>
+                            </div>
+                            <div class="filterButton">
+                                <p>Romantique</p>
+                            </div>
+                            <div class="filterButton">
+                                <p>Animaux autorisés</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>[i] Plus de 500 logements sont disponible dans cette ville</p>
+                </div>
 
-        <section> <!-- Section des résultats + aside "Les plus populaires" -->
-            <article> <!-- Section des résultats -->
-                <h1>Hébergement à Marseille</h1>
-                <p>Resultat 1</p>
-                <p>Resultat 2</p>
-                <p>Resultat 3</p>
-                <p>Resultat 4</p>
-                <p>Resultat 5</p>
-                <p>Resultat 6</p>
-                <p>Affichez plus</p>
-            </article>
-            <aside><!-- "Les plus populaires" -->
-                <h1>Les plus populaires</h1>
-                <p>Populaire 1</p>
-                <p>Populaire 2</p>
-                <p>Populaire 3</p>
-            </aside>
-        </section>
+            </section>
 
-        <section> <!-- Section activités -->
-            <h1>Activités à Marseille</h1>
-            <div>
-                <p>Activité 1</p>
-            </div>
-            <div>
-                <p>Activité 2</p>
-                <p>Activité 3</p>
-            </div>
-            <div>
-                <p>Activité 4</p>
-            </div>
-            <div>
-                <p>Activité 5</p>
-                <p>Activité 6</p>
-            </div>   
-        </section>
+            <section id="Hebergements"> <!-- Section des résultats + aside "Les plus populaires" -->
+                <div id="resultMainSection"> <!-- Section des résultats -->
+                    <div><h1>Hébergement à Marseille</h1></div>
+                    <div id="researchResults">
+                        <div class="result"><p>PHOTO</p><p>Resultat 1</p></div>
+                        <div class="result"><p>PHOTO</p><p>Resultat 2</p></div>
+                        <div class="result"><p>PHOTO</p><p>Resultat 3</p></div>
+                        <div class="result"><p>PHOTO</p><p>Resultat 4</p></div>
+                        <div class="result"><p>PHOTO</p><p>Resultat 5</p></div>
+                        <div class="result"><p>PHOTO</p><p>Resultat 6</p></div>
+                    </div>
+                    <p><b>Affichez plus</b></p>
+                </div>
+                <aside id="mostAppreciatedResult"><!-- "Les plus populaires" -->
+                    <div id="headerForAppreciated">
+                        <h1>Les plus populaires</h1>
+                        <p>LOGO</p>
+                    </div>
+                    
+                    <div class="mostAppreciated"><p>Populaire 1</p></div>
+                    <div class="mostAppreciated"><p>Populaire 2</p></div>
+                    <div class="mostAppreciated"><p>Populaire 3</p></div>
 
+                    
+                </aside>
+            </section>
+
+            <section id="activitiesSection"> <!-- Section activités -->
+                <h1>Activités à Marseille</h1>
+                <div id="activitiesMenu">
+                    <div class="activitiesContainer">
+                        <div class="activitie">
+                            <p>PHOTO</p>
+                            <p>Activité 1</p>
+                        </div>
+                    </div>
+                    <div class="activitiesContainer">
+                        <div class="activitie"><p>PHOTO</p><p>Activité 2</p></div>
+                        <div class="activitie"><p>PHOTO</p><p>Activité 3</p></div>    
+                    </div>
+                    <div class="activitiesContainer">
+                        <div class="activitie"><p>PHOTO</p><p>Activité 4</p></div>
+                    </div>
+                    <div class="activitiesContainer">
+                        <div class="activitie"><p>PHOTO</p><p>Activité 5</p></div>
+                        <div class="activitie"><p>PHOTO</p><p>Activité 6</p></div>  
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer>
-            <div>
+            <div class="footerContent">
                 <h3>A propos</h3>
                 <ul>
                     <li>Fonctionement du site</li>
@@ -64,7 +105,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footerContent">
                 <h3>Nos hébergements</h3>
                 <ul>
                     <li>Charte qualité</li>
@@ -72,7 +113,7 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footerContent">
                 <h3>Assitance</h3>
                 <ul>
                     <li>Centre d'aide</li>
