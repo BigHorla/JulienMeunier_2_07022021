@@ -4,32 +4,115 @@ body{
 	background-color :white;
 	color :black;
 	margin-top:0px;
+    padding : 1%;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
 }
 
+/*---------------------------------Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height:120px;
+}
+#menu{
+    display: flex;
+    flex-flow: row nowrap;
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.navButtonActive{
+    padding:30px;
+    border-top:2px solid #0065FC;
+}
+.navButtonInactive{
+    padding:30px;
+    border :none;
+}
+.navButtonInactive a{
+    color :black;
+}
+.navButton{
+    padding:30px;
+    border :none;
+}
+
+/*---------------------------------------------Main*/
+/*-----------------------Section de recheche*/
+#researchBar{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 30%;
+}
+#mapMarkerLogo{
+    background-color:#F2F2F2;
+    border-radius: 20px 0px 0px 20px;
+    padding: 3%;
+    display: flex;  
+}
+#queryString{
+    
+    display: flex;
+    justify-content: flex-start ;
+    font-weight: bold;
+    font-family:'Raleway', sans-serif;
+    border : 2px solid #F2F2F2;
+    width: 100%;
+    padding: 5px;
+}
+#researchButton{
+    display: flex;
+    padding: 3%;
+    background-color: #0065FC;
+    border-radius: 0px 20px 20px 0px;
+    color :#F2F2F2;
+    font-weight: bold;
+    font-family:'Raleway', sans-serif;
+    border : none;
+}
 #filterBar {
     display: flex;
     flex-flow: row wrap ;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
-
 .filterButton{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin : 1%;
     border : 2px solid #D9D9D9;
     border-radius: 30px;
+    align-items: center;
 }
-
+.filterButton p{
+    margin: 4%;
+    display: flex;
+    
+}
+.circleIcon {
+    background: #DEEBFF;
+    padding:15px;
+    border-radius: 50%;
+}
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
+    color :#0065FC;
+}
+/*-----------------------Section des resultats*/
 #Hebergements{
-    border : 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
 }
-
 #resultMainSection{
-    border : 2px solid rgb(17, 126, 32);
     background-color: #F2F2F2 ;
     border-radius: 15px;
     padding : 1%;
@@ -37,13 +120,10 @@ body{
     margin-right: 0.5%;
     flex-grow: 2;
 }
-
 #researchResults{
     display: flex;
-    flex-flow: row wrap;
-    
+    flex-flow: row wrap;    
 }
-
 .result{
     display: flex;
     flex-direction: column;
@@ -54,18 +134,12 @@ body{
     margin: 1%;
     padding: 0.5%;
 }
-#headerForAppreciated{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
 #mostAppreciatedResult{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     background-color: #F2F2F2;
     width: 20%;
-    border : 2px solid rgb(8, 75, 6);
     border-radius: 15px;
     padding: 1%;
     margin: 1%;
@@ -73,7 +147,11 @@ body{
     
     justify-content: space-between;
 }
-
+#headerForAppreciated{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
 .mostAppreciated{
     display: flex;
     width: 20%;
@@ -84,49 +162,55 @@ body{
     margin: 1%;
     padding: 0.5%;
 }
+/*-----------------------Section des activités*/
+#activitiesSection{
 
+}
+#activitiesMenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.activitiesContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    flex-grow: 1;
+}
+.activitie{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    flex-grow: 1;
+    box-shadow: 5px 5px 5px #F2F2F2;
+}
+.activitie:first-child{
+    margin-bottom: 10%;
+}
+.activitie:only-child{
+    
+    margin:0%;
+}
+
+/*---------------------------------------FOOTER*/
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #F2F2F2;
 }
 
 .footerContent{
     display: flex;
     flex-direction: column;
     width: 100%;
-    border : 2px solid red;
     padding-left: 1%;
 }
 
-#activitiesSection{
-
-}
-
-#activitiesMenu{
-border : 2px solid rgb(0, 17, 255);
-display: flex;
-flex-direction: row;
-width: 100%;
-
-
-}
-
-.activitiesContainer{
-border : 2px solid red;
-display: flex;
-flex-direction: column;
-margin: 1%;
-justify-content: space-between;
-flex-grow: 1;
-}
-
-.activitie{
-display: flex;
-flex-direction: column;
-border : 2px solid rgb(0, 17, 255);
-height: 100%;
-border-radius: 15px;
-justify-content: space-between;
-}
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+  }

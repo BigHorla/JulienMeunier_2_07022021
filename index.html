@@ -4,6 +4,7 @@
 	<head>
 			<meta charet="UTF-8" />
 			<link rel="stylesheet" href="style.css" />
+            <script src="https://kit.fontawesome.com/f73e292c68.js" crossorigin="anonymous"></script>
             <link rel="icon" href="images/logo/Reservia.svg" />
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -11,10 +12,22 @@
 	</head>
 	<body>
 		<header>
-            <div><img src="images/logo/Reservia.svg" alt=""></div>
-            <div><a href="#SectionHebergements">Hébergements</a></div>
-            <div><a href="#SectionActivités">Activités</a></div>
-            <div>s'inscrire</div>
+            <div id="reserviaLogoBox"><img src="images/logo/Reservia.svg" alt=""></div>
+            <div id="menu">
+                <nav>
+                    <div class="navButtonActive">
+                        <a href="#SectionHebergements">Hébergements</a>
+                    </div>
+                    <div class="navButtonInactive">
+                        <a href="#SectionActivités">Activités</a>
+                    </div>
+                    <div class="navButton">
+                        <a href="#SectionActivités">s'inscrire</a>
+                    </div> 
+                </nav>
+                
+                
+            </div>
         </header>
 
         <main>
@@ -22,20 +35,39 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
                 <div> <!-- Moteur de recherche -->
-                    <div>[LOGO] Marseille, France [Rechercher]</div>
+                    <div id="researchBar">
+                        <div id="mapMarkerLogo">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input id="queryString" type="text" placeholder="Marseille, France">
+                        <button id="researchButton">Rechercher</button>
+                          </div>
                     <div>
-                        <h4>Filtres</h4>
+                        
                         <div id="filterBar">
+                            <h4>Filtres</h4>
                             <div class="filterButton">
-                                <p>Economique</p> 
+                                <div class="circleIcon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <p></p>Economique</p> 
                             </div>
                             <div class="filterButton">
+                                <div class="circleIcon">
+                                    <i class="fas fa-child"></i>
+                                </div>
                                 <p>Familial</p>
                             </div>
                             <div class="filterButton">
+                                <div class="circleIcon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
                                 <p>Romantique</p>
                             </div>
                             <div class="filterButton">
+                                <div class="circleIcon">
+                                    <i class="fas fa-dog"></i>
+                                </div>
                                 <p>Animaux autorisés</p>
                             </div>
                         </div>
