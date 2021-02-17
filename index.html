@@ -6,6 +6,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="Description" content="Page de test pour Reservia : Location hebergements">
 			<link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css" />
             <link rel="icon" href="images/logo/Reservia.svg" />
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -13,23 +14,21 @@
 			<title>Reservia</title>
 	</head>
 	<body>
-		<header>
-            <div id="reserviaLogoBox"><img src="images/logo/Reservia.svg" alt=""></div>
-            <div id="menu">
+		<header id="menu">
                 <nav>
-                    <div class="navButtonActive">
+                    <div id="reserviaLogoBox">
+                        <img src="images/logo/Reservia.svg" alt="">
+                    </div>
+                    <div id="navButtonActive">
                         <a href="#Hebergements">Hébergements</a>
                     </div>
-                    <div class="navButtonInactive">
+                    <div id="navButtonInactive">
                         <a href="#activitiesSection">Activités</a>
                     </div>
                     <div class="navButton">
-                        <a href="">s'inscrire</a>
+                        <a href="">S'inscrire</a>
                     </div> 
-                </nav>
-                
-                
-            </div>
+                </nav>            
         </header>
 
         <main>
