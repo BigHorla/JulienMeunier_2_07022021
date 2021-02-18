@@ -5,8 +5,11 @@
 			<meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="Description" content="Page de test pour Reservia : Location hebergements">
-			<link rel="stylesheet" href="style.css" />
-            <link rel="stylesheet" media="screen and (max-width: 900px)" href="mobile.css" />
+            <link rel="stylesheet" href="style.css"/>
+            <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css" />
+            <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="tablet.css" />
+            
+
             <link rel="icon" href="images/logo/Reservia.svg" />
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -30,7 +33,9 @@
                     </div> 
                 </nav>            
         </header>
-
+        <span id="mobile">Version Mobile</span>
+        <span id="tablet">Version Tablette</span>
+        <span id="desktop">Version Desktop</span>
         <main>
             <section> <!-- Section dédiée à la recherche -->
                 <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
@@ -42,6 +47,7 @@
                         </div>
                         <input id="queryString" type="text" placeholder="Marseille, France">
                         <button id="researchButton">Rechercher</button>
+                        <button id="researchButtonIcon"><i class="fas fa-search"></i></button>
                           </div>
                     <div>
                         
@@ -252,7 +258,7 @@
             </section>
 
             <section id="activitiesSection"> <!-- Section activités -->
-                <h1>Activités à Marseille</h1>
+                <h2>Activités à Marseille</h2>
                 <div id="activitiesMenu">
                     <div class="activitiesContainer">
                         <a href="" class="bigActivitie">

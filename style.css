@@ -1,4 +1,12 @@
-
+#mobile{
+    display: none;
+}
+#tablet{
+    display: none;
+}
+#desktop{
+    display: flex;
+}
 body{
 	font-family:'Raleway', sans-serif;
 	font-size: 1em;
@@ -109,12 +117,18 @@ main{
 #researchButton{
     display: flex;
     padding: 3%;
+    width: auto;
+    height: auto;
     background-color: #0065FC;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
     color :#F2F2F2;
     font-weight: bold;
     font-family:'Raleway', sans-serif;
     border : none;
+    margin-left: -1em;
+}
+#researchButtonIcon{
+    display: none;
 }
 #filterBar {
     display: flex;

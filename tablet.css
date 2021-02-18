@@ -1,12 +1,14 @@
+
 #mobile{
-    display: flex;
+    display: none;
 }
 #tablet{
-    display: none;
+    display:flex;
 }
 #desktop{
     display: none;
 }
+
 body{
 	font-family:'Raleway', sans-serif;
 	font-size: 1em;
@@ -14,85 +16,73 @@ body{
     padding:0;
 	background-color :white;
 	color :black;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+	margin-top:0px;
+    padding-top : 0%;
+    padding-left: 1%;
 }
 a{
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
-h1{
-    margin-left: 5%;
-}
 h2{
     font-size: 1.2em;
+    font-weight:800;
 }
 
 /*---------------------------------Header*/
 #menu nav{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    min-width: 100%;
-    margin-bottom: 5%;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 99%;
 }
+
 #reserviaLogoBox{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 45%;
-    min-width: 45%;
-    order : 1;
+    align-content: center;
+    min-width: 60%;
+    min-height: 100%;
+    max-height: 100%;
 }
-#reserviaLogoBox img{
-    height: 100%;
-    margin-left: 15%;
-}
+
 #navButtonActive{
     display: flex;
     justify-content: center;
-    padding-bottom: 3%;
     align-items: center;
-    max-width: 50%;
-    min-width: 49%;
-    height: 3em;
-    border-bottom: 3px solid #0065FC;
-    border-top: none;
-    margin-top: 3%;
-    order: 3;
+    height: 6em;
+    min-width: 10%;
+    border-top: 3px solid #0065FC;
+}
+#navButtonActive a{
+    font-weight: normal;
+    color: #0065FC;
 }
 #navButtonInactive{
     display: flex;
     justify-content: center;
-    padding-bottom: 3%;
-    height: 3em;
     align-items: center;
-    max-width: 50%;
-    min-width: 49%;
-    border-bottom: 3px solid #F2F2F2;
-    margin-top: 3%;
-    order: 4;
+    height: 6em;
+    min-width: 10%;
+}
+#navButtonInactive a{
+    font-weight: normal;
+}
+.navButtonInactive a{
+    color :black;
 }
 .navButton{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    max-width: 30%;
-    min-width: 30%;
-    
-    order: 2;
-    padding :0;
+    height: 6em;
+    min-width: 10%;
+    align-content: flex-end;
 }
 .navButton a{
     font-weight: bold;
-    color: #0065FC;
-    margin: 0%;
-    margin-right: 3%;
+    color :#0065FC;
 }
-
 
 /*---------------------------------------------Main*/
 /*-----------------------Section de recheche*/
@@ -128,18 +118,20 @@ main p{
     padding: 5px;
 }
 #researchButton{
-    display: none;
-}
-#researchButtonIcon{
     display: flex;
     padding: 3%;
+    width: auto;
+    height: auto;
     background-color: #0065FC;
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     color :#F2F2F2;
     font-weight: bold;
     font-family:'Raleway', sans-serif;
     border : none;
     margin-left: -1em;
+}
+#researchButtonIcon{
+    display: none;
 }
 #filterBar {
     display: flex;
@@ -268,8 +260,8 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     border-radius: 15px;
     padding: 0;
     margin-bottom: 3%;
-    min-width: 90%;
-    max-width: 90%;
+    min-width: 45%;
+    max-width: 45%;
     min-height: 40%;
     max-height: 40%;
     color: black;
@@ -380,44 +372,68 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 /*-----------------------Section des activités*/
 #activitiesSection{
     display: flex;
-    flex-direction: column;
-    min-width: inherit;
-    overflow:visible;
+    flex-flow: column nowrap;
+    width: 100%;
     height: auto;
-
+    overflow: hidden; 
+}
+#activitiesSection h2{
+    padding-left: 2% ;
 }
 #activitiesMenu{
     display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    min-width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
     height: auto;
+    margin-bottom: 10%;
+    padding: 2%;
+    
 }
-.activitiesContainer, .activitiesContainer2{
+.activitiesContainer{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 48%;
+    max-width: 49%;
+    height: auto;
+    order :1;
+    margin-bottom: 3%;
+}
+.activitiesContainer2{
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 48%;
+    max-width: 49%;
+    justify-content: space-between;
+    height: 10em;
+    order : 2;
+
+}
+
+.bigActivitie{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    min-width: 100%;
-    height: auto;
-}
-.bigActivitie, .medActivitie, .smallActivitie{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    height: 25vh;
-    border-radius: 15px;
+    width: 100%;
+    max-height: 15em;
+    border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 8px 15px #d9d9d9;
-    margin-bottom: 5%;
+}
+.medActivitie, .smallActivitie{
+    display: flex;
+    flex-direction: column;
+    min-width: 48%;
+    max-width: 48%;
+    height: 80%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 8px 15px #d9d9d9;
 }
 .activitiePicture{
+    
     width: 100%;
     height: 90%;
     overflow: hidden;
 }
 .activitieTitle{
+
     background-color:white;
     width: 100%;
     height: 5em;
@@ -449,7 +465,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 /*---------------------------------------FOOTER*/
 footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #F2F2F2;
 }
@@ -464,11 +480,7 @@ footer{
 ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 0%;
+    margin-left: 2%;
     margin-bottom: 2%;
     padding: 0;
-    
-  }
-  li{
-    line-height: 2em;
   }
