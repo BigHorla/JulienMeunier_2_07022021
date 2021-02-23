@@ -250,11 +250,13 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 }
 /*-----------------------Section des resultats*/
 #Hebergements{
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-width: inherit;
     margin-bottom: 2%;
+    overflow: hidden;  
 
 }
 #Hebergements h2{
