@@ -1,19 +1,16 @@
 html{
-    position:relative;
+    margin: 0;
+    width: 100vw;
 }
 body{
     padding:0;
     margin: 0;
-    position: absolute;
-    left: 0;
-    width: 100vw;
 	font-family:'Raleway', sans-serif;
 	font-size: 1em;
     margin:0;
     padding:0;
 	background-color :white;
 	color :black;
-    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -257,7 +254,8 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     flex-direction: column;
     justify-content: center;
     min-width: inherit;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
+
 }
 #Hebergements h2{
 margin-left: 4%;
