@@ -29,8 +29,9 @@ h2{
 #reserviaLogoBox{
     display: flex;
     align-content: center;
-    min-width: 55%;
-    max-width: 55%;
+    min-width: 45%;
+    max-width: 60%;
+    width: 60%;
     min-height: 50%;
     max-height: 70%;
 }
@@ -242,10 +243,10 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 #resultMainSection{
     background-color: #F2F2F2 ;
     border-radius: 15px;
-    min-width: 90%;
-    max-width: 100%;
+    min-width: 96%;
     order:2;
     margin: 0;
+    margin-left: 1rem;
 }
 #resultMainSection h2{
     margin-left: 3%;
@@ -325,9 +326,9 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     display: flex;
     flex-flow: row wrap;
     order:1;
-    min-width: 90%;
-    max-width: 100%;
+    min-width: 94%;
     margin-bottom: 1em;
+    margin-left: 1rem;
     justify-content: space-between;
 }
 #headerForAppreciated{
@@ -347,8 +348,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     flex-direction: column;
     min-height: 15%;
     max-height: 20%;
-    min-width: 15%;
-    max-width: 30%;
+    width: 30%;
     margin-bottom: 1em;
     background-color: white;
     border-radius: 15px;

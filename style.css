@@ -1,5 +1,6 @@
 html{
-    margin: 0;
+    margin:0;
+    padding:0;
 }
 body{
     margin:0;
@@ -8,7 +9,7 @@ body{
     background-color :white;
     position: absolute;
     color :black;
-    font-size: 1em; 
+    font-size: 1em;
 }
 section{
     margin:0;
@@ -359,7 +360,6 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 .mostAppreciated{
     display: flex;
     overflow: hidden;
-    width: 90%;
     min-height: 15%;
     max-height: 30%;
     background-color: white;
