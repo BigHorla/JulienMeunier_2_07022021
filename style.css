@@ -340,6 +340,13 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     line-height: 1.5em;
     margin-bottom: 5%;
 }
+.textResult h2, .mostAppreciated h2{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin:0;
+    padding: 0;
+}
 .starBox{
     display: flex;
     margin-bottom: 3%;
@@ -478,7 +485,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     border-radius: 0px 0px 15px 15px;
     align-items: center;
 }
-.activitieTitle p{
+.activitieTitle h2{
     display: flex;
     font-weight: bold;
     font-size: 1em;
