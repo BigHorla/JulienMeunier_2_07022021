@@ -331,6 +331,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     margin-left: 1rem;
     justify-content: space-between;
 }
+
 #headerForAppreciated{
     display: flex;
     flex-flow: row nowrap;
@@ -364,11 +365,11 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     height: 13em; 
     max-height: 100%;
     object-fit: cover; 
-    object-position: left bottom;
+    object-position: right bottom;
     border-radius: 15px 15px 0px 0px;   
 }
 .mostAppreciatedPicture{
-    
+    border-radius: 15px 15px 0px 0px;
     max-width: 100%;
     min-width: 100%;
     overflow: hidden;
