@@ -249,7 +249,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     margin-left: 1rem;
 }
 #resultMainSection h2{
-    margin-left: 3%;
+    margin-left: 0%;
 }
 #researchResults{
     display: flex;
@@ -301,7 +301,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
 }
 .textResult{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: 3%;
 }
@@ -382,6 +382,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     min-width: 60%;
     padding: 3%;
 }
+
 
 
 /*-----------------------Section des activités*/

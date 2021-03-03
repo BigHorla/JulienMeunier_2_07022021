@@ -346,6 +346,12 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     line-height: 1.5em;
     margin:0;
     padding: 0;
+    max-width: 98%;
+}
+.textResult h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .starBox{
     display: flex;
@@ -404,7 +410,6 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     
 }
 .mostAppreciatedPicture{
-    
     max-width: 30%;
     min-width: 30%;
     overflow: hidden;
@@ -418,6 +423,7 @@ input[type="checkbox"].filterCheckbox:checked + label .circleIcon{
     min-width: 60%;
     padding: 3%;
 }
+
 /*-----------------------Section des activités*/
 #activitiesSection{
     display: flex;
